@@ -91,13 +91,18 @@ jobs:
           ls -R
           echo -------------------------------------------------------
           echo cp : copy file and directory
-          echo example : cp dir1 dir2
-          ls -R
-          cp dir1 dir2
+          echo  -v : view wtf running after command
+          echo -i : need confirm
+          echo -R : directory and sub
+          echo example view list here
+          sudo apt install tree
+          mkdir dir1/sub_dir1  dir1/sub_dir2
+          tree
+          cp -r dir1/sub_dir1 dir2
           ls -R
           echo -------------------------------------------------------
           echo mv : move file and directory
-          echo example : mv dir2/dir dir
+          echo example : mv dir2/sub_dir1 dir3
           ls -R
-          mv dir2/dir1 dir1
+          mv dir2/sub_dir1 dir3
           ls -R
