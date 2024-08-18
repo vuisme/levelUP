@@ -25,5 +25,21 @@ jobs:
           echo L1 - Shell forward command to Kernel. Ubuntu and Centos using bash shell
           echo L2 - Application is friendly for user managing shell
           echo L2 - Install Application by apt on ubuntu from repo
-          sudo apt update
-          sudo apt upgrade
+          echo sudo apt update - update package list database
+          echo sudo apt upgrade - upgrade newest version package on machine
+      - name: Linux directory structure
+        run: |
+          echo / : root directory
+          echo /bin : Directory contain binary for system or application
+          echo /boot : Directory contain binary for boot
+          echo /dev : Directory contain for hardward 
+          echo /etc : config file for system and application
+          echo /home : List User folder
+          echo /lib or lib64 : Library  file
+          echo /opt : option - extension or application 3rd
+          echo /tmp : temporary file - Clear on reboot
+          echo /usr : User shared file and program
+          echo /var : logfiles
+      - name: Root and  user command
+          echo sudo + command : use command as root
+          echo sudo  passwd root  : change password root
