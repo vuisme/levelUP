@@ -40,6 +40,16 @@ jobs:
           echo /tmp : temporary file - Clear on reboot
           echo /usr : User shared file and program
           echo /var : logfiles
-      - name: Root and  user command
+      - name: Root and user command
+        run: |
           echo sudo + command : use command as root
-          echo sudo  passwd root  : change password root
+          echo sudo passwd root  : change password root
+          echo cd : go to folder and file
+          echo cd / : go to top directory
+          cd /
+          ls -al
+          echo cd .. : go up one level directory
+          cd /home
+          ls -al
+          cd ..
+          ls -al
