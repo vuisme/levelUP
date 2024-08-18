@@ -32,7 +32,7 @@ jobs:
           echo / : root directory
           echo /bin : Directory contain binary for system or application
           echo /boot : Directory contain binary for boot
-          echo /dev : Directory contain for hardward 
+          echo /dev : Directory contain for hardward
           echo /etc : config file for system and application
           echo /home : List User folder
           echo /lib or lib64 : Library  file
@@ -73,7 +73,7 @@ jobs:
           ls -laRt
           echo -------------------------------------------------------
           echo mkdir : Create directory
-          echo -p : quick create sub direction 
+          echo -p : quick create sub direction
           echo example : mkdir -p dir/dir_sub/dir_sub_sub
           mkdir -p dir/dir_sub/dir_sub_sub
           ls -R
