@@ -48,8 +48,27 @@ jobs:
           echo cd / : go to top directory
           cd /
           ls -al
+          echo -------------------------------------------------------
           echo cd .. : go up one level directory
           cd /home
           ls -al
           cd ..
           ls -al
+          echo -------------------------------------------------------
+          echo cd ~ : go to current user home directory (example : root user is /root, user sample is /home/sample
+          cd ~
+          echo Can use : cd ~user for go to specific user
+          echo -------------------------------------------------------
+          echo pwd : print working directory
+          cd /home
+          pwd
+      - name: Working with file and Direction
+        run: |
+          echo ls : List files and folders
+          echo -a : all file, include hidden
+          echo -l : list all attribute, size, date, permission...
+          echo -R : list sub direction
+          echo -t : sort by last modify time
+          echo -r : reverse order
+          echo example : ls -laRt
+          ls -laRt
