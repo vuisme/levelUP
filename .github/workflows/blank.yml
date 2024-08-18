@@ -1,0 +1,29 @@
+name: From Noob to Legends - Roadmaps
+
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  linux:
+    name: Starter with linux
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome to Ubuntu
+        run: echo Hello Ubuntu!
+
+      - name: What is Linux, struct of linux
+        run: |
+          echo L0 - Kernel managing hardware resource, files, processing, network and security
+          echo L1 - Shell forward command to Kernel. Ubuntu and Centos using bash shell
+          echo L2 - Application is friendly for user managing shell
+          echo L2 - Install Application by apt on ubuntu from repo
+          echo sudo apt update
+          echo sudo apt upgrade
