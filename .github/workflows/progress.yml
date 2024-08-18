@@ -68,14 +68,15 @@ jobs:
           echo -R : list sub direction
           echo -t : sort by last modify time
           echo -r : reverse order
-          echo example : ls -laRt
+          echo example : ls -lat
           cd ~
-          ls -laRt
+          ls -lat
           echo -------------------------------------------------------
           echo mkdir : Create directory
           echo -p : quick create sub direction
           echo example : mkdir -p dir/dir_sub/dir_sub_sub
-          mkdir -p dir/dir_sub/dir_sub_sub
+          mkdir -p test/dir/dir_sub/dir_sub_sub
+          cd test
           ls -R
           echo example quick create multiple
           mkdir dir1 dir2 dir3
