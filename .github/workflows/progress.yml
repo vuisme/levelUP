@@ -53,7 +53,7 @@ jobs:
           cd /home
           ls -al
           echo -------------------------------------------------------
-          echo cd ~ : go to current user home directory (example : root user is /root, user sample is /home/sample
+          echo "cd ~ : go to current user home directory (example : root user is /root, user sample is /home/sample)"
           cd ~
           echo Can use : cd ~user for go to specific user
           echo -------------------------------------------------------
