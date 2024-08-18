@@ -25,5 +25,5 @@ jobs:
           echo L1 - Shell forward command to Kernel. Ubuntu and Centos using bash shell
           echo L2 - Application is friendly for user managing shell
           echo L2 - Install Application by apt on ubuntu from repo
-          echo sudo apt update
-          echo sudo apt upgrade
+          sudo apt update
+          sudo apt upgrade
