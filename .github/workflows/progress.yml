@@ -90,4 +90,14 @@ jobs:
           rmdir -p dir/dir_sub/dir_sub_sub
           ls -R
           echo -------------------------------------------------------
- 
+          echo cp : copy file and directory
+          echo example : cp dir1 dir2
+          ls -R
+          cp dir dir2
+          ls -R
+          echo -------------------------------------------------------
+          echo mv : move file and directory
+          echo example : mv dir2/dir dir
+          ls -R
+          mv dir2/dir dir
+          ls -R
