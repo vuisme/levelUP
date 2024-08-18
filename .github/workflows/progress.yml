@@ -52,8 +52,6 @@ jobs:
           echo cd .. : go up one level directory
           cd /home
           ls -al
-          cd ..
-          ls -al
           echo -------------------------------------------------------
           echo cd ~ : go to current user home directory (example : root user is /root, user sample is /home/sample
           cd ~
